@@ -19,12 +19,10 @@ package de.topobyte.apps.viewer;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
@@ -50,10 +48,7 @@ public class UnlockDialog extends DialogFragment
     builder.setView(view);
 
     builder.setPositiveButton(android.R.string.ok,
-        (dialog, id) -> {
-          Intent unlockIntent = FreemiumUtil.createUnlockIntent();
-          startActivity(unlockIntent);
-        });
+        (dialog, id) -> startUnlockIntent());
 
     builder.setNegativeButton(android.R.string.cancel,
         (dialog, id) -> {
@@ -67,11 +62,14 @@ public class UnlockDialog extends DialogFragment
     });
 
     Button button2 = view.findViewById(R.id.button2);
-    button2.setOnClickListener(v -> {
-      Intent unlockIntent = FreemiumUtil.createUnlockIntent();
-      startActivity(unlockIntent);
-    });
+    button2.setOnClickListener(v -> startUnlockIntent());
 
     return builder.create();
+  }
+
+  private void startUnlockIntent()
+  {
+    Intent unlockIntent = FreemiumUtil.createUnlockIntent();
+    startActivity(unlockIntent);
   }
 }
