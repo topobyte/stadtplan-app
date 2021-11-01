@@ -26,11 +26,11 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -53,7 +53,7 @@ public class TipsAndTricksDialog extends DialogFragment
 
   @Override
   @SuppressLint("InflateParams")
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     if (savedInstanceState != null) {
       index = savedInstanceState.getInt(BUNDLE_INDEX);

@@ -23,9 +23,9 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -44,7 +44,7 @@ public class CategoriesDialog extends DialogFragment
 
   @Override
   @SuppressLint("InflateParams")
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     LayoutInflater inflater = getActivity().getLayoutInflater();
 

@@ -19,11 +19,11 @@ package de.topobyte.apps.viewer;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -42,7 +42,7 @@ public class ConsentDialog extends DialogFragment
 
   @Override
   @SuppressLint("InflateParams")
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     LayoutInflater inflater = getActivity().getLayoutInflater();
 

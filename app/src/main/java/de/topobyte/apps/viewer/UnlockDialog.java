@@ -25,6 +25,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -37,7 +38,7 @@ public class UnlockDialog extends DialogFragment
 
   @Override
   @SuppressLint("InflateParams")
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 

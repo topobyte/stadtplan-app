@@ -19,10 +19,10 @@ package de.topobyte.apps.viewer.drawer;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -33,7 +33,7 @@ public class HelpDrawerDialog extends DialogFragment
 
   @Override
   @SuppressLint("InflateParams")
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 

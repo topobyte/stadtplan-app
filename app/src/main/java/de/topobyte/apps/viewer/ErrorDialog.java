@@ -18,10 +18,10 @@
 package de.topobyte.apps.viewer;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
@@ -34,7 +34,7 @@ public class ErrorDialog extends DialogFragment
 
   @NonNull
   @Override
-  public Dialog onCreateDialog(Bundle savedInstanceState)
+  public Dialog onCreateDialog(@Nullable Bundle savedInstanceState)
   {
     String noSpace = getString(R.string.nospaceleft);
     String spaceNeeded1 = getString(R.string.spaceneeded1);
