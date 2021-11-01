@@ -264,6 +264,10 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="dialog_netzplan_title">More Apps</string>
+    <string name="dialog_netzplan_text">Get the Public Transport Map for ATestCity. Once installed, it will open directly from the menu.</string>
+    <string name="dialog_netzplan_button">Install using Google Play</string>
+
     <!-- more maps -->
 
     <string name="mm_head">More apps by Topobyte.de</string>

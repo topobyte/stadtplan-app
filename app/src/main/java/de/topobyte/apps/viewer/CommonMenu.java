@@ -26,7 +26,6 @@ import androidx.fragment.app.FragmentActivity;
 import java.util.Locale;
 
 import de.topobyte.android.intent.utils.AppMetaIntents;
-import de.topobyte.android.intent.utils.IntentFactory;
 import de.topobyte.android.intent.utils.TopobyteIntentFactory;
 import de.topobyte.android.misc.utils.PackageUtil;
 import de.topobyte.apps.maps.atestcity.R;
@@ -99,12 +98,13 @@ public class CommonMenu
       case R.id.menu_public_transport:
         if (AppConstants.PACKAGE_NETZPLAN != null) {
           if (PackageUtil.isPackageInstalled(context, AppConstants.PACKAGE_NETZPLAN)) {
-            intent =
-                context.getPackageManager().getLaunchIntentForPackage(AppConstants.PACKAGE_NETZPLAN);
+            intent = context.getPackageManager()
+                .getLaunchIntentForPackage(AppConstants.PACKAGE_NETZPLAN);
+            context.startActivity(intent);
           } else {
-            intent = IntentFactory.createGooglePlayAppDetailsIntent(AppConstants.PACKAGE_NETZPLAN);
+            NetzplanInstallDialog dialog = new NetzplanInstallDialog();
+            dialog.show(context.getSupportFragmentManager(), null);
           }
-          context.startActivity(intent);
         }
         return true;
 
