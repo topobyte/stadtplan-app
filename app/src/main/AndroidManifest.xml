@@ -39,4 +39,8 @@
         <activity android:name="de.topobyte.apps.viewer.activities.MoreAppsActivity" />
     </application>
 
+    <queries>
+        <package android:name="de.topobyte.transportation.plan.deu.berlin" />
+    </queries>
+
 </manifest>
