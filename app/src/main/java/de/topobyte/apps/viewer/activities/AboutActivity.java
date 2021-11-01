@@ -55,6 +55,7 @@ public class AboutActivity extends PlainActivity
     appVersion.setText(String.format(appVersionTemplate, versionName));
 
     setupFeedback();
+    setupDonate();
 
     TextView website = findViewById(R.id.textViewWebsite);
     TextView repo = findViewById(R.id.textViewRepo);
@@ -110,6 +111,41 @@ public class AboutActivity extends PlainActivity
         url = "https://www.topobyte.de/de/stadtplan-app/community";
       }
       startActivity(IntentFactory.createUrlIntent(url));
+    });
+  }
+
+  private void setupDonate()
+  {
+    Button buttonDonate1 = findViewById(R.id.buttonDonate1);
+    Button buttonDonate2 = findViewById(R.id.buttonDonate2);
+    Button buttonDonate5 = findViewById(R.id.buttonDonate5);
+    Button buttonDonate10 = findViewById(R.id.buttonDonate10);
+
+    CommonIcons commonIcons = new CommonIcons(this, 36);
+
+    commonIcons.setCafe(buttonDonate1);
+    commonIcons.setBeer(buttonDonate2);
+    commonIcons.setCinema(buttonDonate5);
+    commonIcons.setRestaurant(buttonDonate10);
+
+    buttonDonate1.setOnClickListener(view -> {
+      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_1);
+      startActivity(intent);
+    });
+
+    buttonDonate2.setOnClickListener(view -> {
+      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_2);
+      startActivity(intent);
+    });
+
+    buttonDonate5.setOnClickListener(view -> {
+      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_5);
+      startActivity(intent);
+    });
+
+    buttonDonate10.setOnClickListener(view -> {
+      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_10);
+      startActivity(intent);
     });
   }
 
