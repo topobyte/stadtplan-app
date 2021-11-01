@@ -48,9 +48,6 @@ public class UnlockDialog extends DialogFragment
     View view = inflater.inflate(R.layout.dialog_unlock, null);
     builder.setView(view);
 
-    builder.setPositiveButton(android.R.string.ok,
-        (dialog, id) -> startUnlockIntent());
-
     builder.setNegativeButton(android.R.string.cancel,
         (dialog, id) -> {
           // ignore

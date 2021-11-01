@@ -47,9 +47,6 @@ public class NetzplanInstallDialog extends DialogFragment
     View view = inflater.inflate(R.layout.dialog_netzplan, null);
     builder.setView(view);
 
-    builder.setPositiveButton(android.R.string.ok,
-        (dialog, id) -> openGooglePlay());
-
     builder.setNegativeButton(android.R.string.cancel,
         (dialog, id) -> {
           // ignore
