@@ -53,7 +53,10 @@ public class NetzplanInstallDialog extends DialogFragment
         });
 
     Button button = view.findViewById(R.id.button);
-    button.setOnClickListener(v -> openGooglePlay());
+    button.setOnClickListener(v -> {
+      openGooglePlay();
+      dismiss();
+    });
 
     return builder.create();
   }
@@ -62,6 +65,5 @@ public class NetzplanInstallDialog extends DialogFragment
   {
     Intent intent = IntentFactory.createGooglePlayAppDetailsIntent(AppConstants.PACKAGE_NETZPLAN);
     startActivity(intent);
-    dismiss();
   }
 }

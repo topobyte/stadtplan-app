@@ -60,7 +60,10 @@ public class UnlockDialog extends DialogFragment
     });
 
     Button button2 = view.findViewById(R.id.button2);
-    button2.setOnClickListener(v -> startUnlockIntent());
+    button2.setOnClickListener(v -> {
+      startUnlockIntent();
+      dismiss();
+    });
 
     return builder.create();
   }
