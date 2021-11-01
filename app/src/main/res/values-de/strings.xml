@@ -249,7 +249,7 @@
 
     <string name="dialog_unlock_title">Premium Features</string>
     <string name="dialog_unlock_text1_freemium">Schalten Sie die Premium-Features frei und finden Sie noch schneller, wonach Sie suchen. Mit der freigeschalteten Version können Sie die Suchergebnisse nach ihrer Entfernung sortieren, sie auf bestimmte Kategorien begrenzen und den Suchmodus einstellen.</string>
-    <string name="dialog_unlock_text1_admob">• Entfernt Werbe-Banner von der Karte\n• Finden Sie noch schneller, wonach Sie suchen. Mit der freigeschalteten Version können Sie die Suchergebnisse nach ihrer Entfernung sortieren, sie auf bestimmte Kategorien begrenzen und den Suchmodus einstellen.</string>
+    <string name="dialog_unlock_text1_admob">Entfernt Werbe-Banner von der Karte\n\nFinden Sie noch schneller, wonach Sie suchen. Mit der freigeschalteten Version können Sie die Suchergebnisse nach ihrer Entfernung sortieren, sie auf bestimmte Kategorien begrenzen und den Suchmodus einstellen.</string>
     <string name="dialog_unlock_button1">Premium Features erklären</string>
     <string name="dialog_unlock_button2">Auf Google Play freischalten</string>
 

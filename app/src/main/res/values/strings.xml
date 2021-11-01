@@ -249,7 +249,7 @@
 
     <string name="dialog_unlock_title">Get premium features</string>
     <string name="dialog_unlock_text1_freemium">Unlock premium features of the application and enjoy even better search functionality. With the unlocked version you will be able to sort results by distance and have better control over your results by selecting categories and by defining the match mode.</string>
-    <string name="dialog_unlock_text1_admob">• Remove ad banner from map\n• Enjoy even better search functionality. With the unlocked version you will be able to sort results by distance and have better control over your results by selecting categories and by defining the match mode.</string>
+    <string name="dialog_unlock_text1_admob">Remove ad banner from map\n\nEnjoy even better search functionality. With the unlocked version you will be able to sort results by distance and have better control over your results by selecting categories and by defining the match mode.</string>
     <string name="dialog_unlock_button1">Explain premium features</string>
     <string name="dialog_unlock_button2">Unlock using Google Play</string>
 
