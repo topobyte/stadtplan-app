@@ -266,7 +266,7 @@
 
     <string name="dialog_netzplan_title">Andere Apps</string>
     <string name="dialog_netzplan_text">Holen Sie sich die ÖPNV-Karte für ATestCity. Sobald sie installiert ist, lässt sie sich direkt übers Menu öffnen.</string>
-    <string name="dialog_netzplan_button">Über Google Play installieren</string>
+    <string name="dialog_netzplan_button">Auf Google Play installieren</string>
 
     <!-- more maps -->
 
