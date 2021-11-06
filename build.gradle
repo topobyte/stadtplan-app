@@ -4,8 +4,8 @@ wrapper {
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.3'
@@ -18,12 +18,12 @@ allprojects {
             url maven_path_topobyte
         }
         maven {
-            url 'http://mvn.topobyte.de'
+            url 'https://mvn.topobyte.de'
         }
         maven {
-            url 'http://mvn.slimjars.com'
+            url 'https://mvn.slimjars.com'
         }
-        jcenter()
         google()
+        mavenCentral()
     }
 }
