@@ -15,7 +15,7 @@ License. See [GPL.md](GPL.md) for details.
 
 Clone the repository recursively (including submodules):
 
-    git clone --recursive https://github.com/topobyte/android-stadtplan.git
+    git clone --recursive https://github.com/topobyte/stadtplan-app.git
 
 ## Add local map and database files
 
