@@ -11,12 +11,12 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId 'de.topobyte.apps.maps.atestcity'
-        minSdkVersion 14
-        targetSdkVersion 30
+        minSdkVersion 19
+        targetSdkVersion 33
         versionCode 153
         versionName "9.0.3"
         buildConfigField "int", "MAP_FILE_SIZE", "" +
@@ -141,7 +141,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'org.slf4j:slf4j-android:1.7.12'
     implementation 'pub.devrel:easypermissions:3.0.0'
-    admobImplementation 'com.google.android.gms:play-services-ads:18.2.0'
+    admobImplementation 'com.google.android.gms:play-services-ads:22.2.0'
 
     testImplementation 'org.robolectric:robolectric:4.5.1'
     testImplementation 'junit:junit:4.12'

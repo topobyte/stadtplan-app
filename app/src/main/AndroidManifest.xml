@@ -25,7 +25,7 @@
         android:theme="@style/MainTheme">
         <activity
             android:name="de.topobyte.apps.viewer.Stadtplan"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
