@@ -20,7 +20,6 @@ package de.topobyte.apps.viewer.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.util.Linkify;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -31,10 +30,9 @@ import java.util.regex.Pattern;
 import de.topobyte.android.common.resources.CommonIcons;
 import de.topobyte.android.intent.utils.IntentFactory;
 import de.topobyte.android.intent.utils.ThankOption;
-import de.topobyte.android.intent.utils.TopobyteIntentFactory;
 import de.topobyte.apps.maps.atestcity.BuildConfig;
 import de.topobyte.apps.maps.atestcity.R;
-import de.topobyte.apps.viewer.AppConstants;
+import de.topobyte.apps.viewer.DonateDialog;
 import de.topobyte.apps.viewer.FeedbackUtil;
 
 public class AboutActivity extends PlainActivity
@@ -129,23 +127,19 @@ public class AboutActivity extends PlainActivity
     commonIcons.setRestaurant(buttonDonate10);
 
     buttonDonate1.setOnClickListener(view -> {
-      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_1);
-      startActivity(intent);
+      donateDialog(ThankOption.THANK_1);
     });
 
     buttonDonate2.setOnClickListener(view -> {
-      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_2);
-      startActivity(intent);
+      donateDialog(ThankOption.THANK_2);
     });
 
     buttonDonate5.setOnClickListener(view -> {
-      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_5);
-      startActivity(intent);
+      donateDialog(ThankOption.THANK_5);
     });
 
     buttonDonate10.setOnClickListener(view -> {
-      Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(ThankOption.THANK_10);
-      startActivity(intent);
+      donateDialog(ThankOption.THANK_10);
     });
   }
 
@@ -166,6 +160,15 @@ public class AboutActivity extends PlainActivity
     {
       return link;
     }
+  }
+
+  private void donateDialog(ThankOption value)
+  {
+    DonateDialog dialog = new DonateDialog();
+    Bundle args = new Bundle();
+    args.putSerializable(DonateDialog.ARG_VALUE, value);
+    dialog.setArguments(args);
+    dialog.show(getSupportFragmentManager(), null);
   }
 
 }

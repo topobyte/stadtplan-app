@@ -19,7 +19,7 @@
             <TextView
                 android:id="@+id/textView"
                 style="@style/DialogFont"
-                android:text="@string/dialog_netzplan_text" />
+                android:text="@string/fb_donate_info" />
 
             <Button
                 android:id="@+id/button"

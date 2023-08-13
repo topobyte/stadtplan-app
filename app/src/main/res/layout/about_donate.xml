@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/head2"
         style="@style/Head"
-        android:text="@string/fb_head2" />
+        android:text="@string/cr_support_us" />
 
     <TextView
         android:id="@+id/textDonationInfo"

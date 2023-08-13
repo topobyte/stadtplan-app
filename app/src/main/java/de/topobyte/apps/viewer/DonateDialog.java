@@ -1,4 +1,4 @@
-// Copyright 2021 Sebastian Kuerten
+// Copyright 2023 Sebastian Kuerten
 //
 // This file is part of stadtplan-app.
 //
@@ -29,11 +29,16 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import de.topobyte.android.intent.utils.IntentFactory;
+import de.topobyte.android.intent.utils.ThankOption;
+import de.topobyte.android.intent.utils.TopobyteIntentFactory;
 import de.topobyte.apps.maps.atestcity.R;
 
-public class NetzplanInstallDialog extends DialogFragment
+public class DonateDialog extends DialogFragment
 {
+
+  public static final String ARG_VALUE = "value";
+
+  private ThankOption value;
 
   @Override
   @SuppressLint("InflateParams")
@@ -43,9 +48,12 @@ public class NetzplanInstallDialog extends DialogFragment
 
     LayoutInflater inflater = getActivity().getLayoutInflater();
 
-    builder.setTitle(R.string.cr_more_apps);
-    View view = inflater.inflate(R.layout.dialog_netzplan, null);
+    builder.setTitle(R.string.cr_support_us);
+    View view = inflater.inflate(R.layout.dialog_donate, null);
     builder.setView(view);
+
+    Bundle arguments = getArguments();
+    value = (ThankOption) arguments.get(ARG_VALUE);
 
     builder.setNegativeButton(android.R.string.cancel,
         (dialog, id) -> {
@@ -63,7 +71,7 @@ public class NetzplanInstallDialog extends DialogFragment
 
   private void openGooglePlay()
   {
-    Intent intent = IntentFactory.createGooglePlayAppDetailsIntent(AppConstants.PACKAGE_NETZPLAN);
+    Intent intent = TopobyteIntentFactory.createThanksAppDetailIntent(value);
     startActivity(intent);
   }
 }
