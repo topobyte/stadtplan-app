@@ -121,31 +121,31 @@ configurations {
 }
 
 dependencies {
-    implementation 'de.topobyte:mapocado-android:0.2.0'
-    implementation 'de.topobyte:nomioc-luqe:0.1.0'
-    implementation 'de.topobyte:luqe-android:0.2.1'
+    implementation 'de.topobyte:mapocado-android:0.4.0'
+    implementation 'de.topobyte:nomioc-luqe:0.2.0'
+    implementation 'de.topobyte:luqe-android:0.4.0'
     implementation 'de.topobyte:android-seekbarpreference:0.0.1'
     implementation 'de.topobyte:adt-multicollections:0.0.4'
     implementation 'de.topobyte:android-app-version-util:0.0.1'
     implementation 'de.topobyte:android-map-zoom-controls:0.0.2'
     implementation 'de.topobyte:android-fullscreen:0.0.1'
-    implementation 'de.topobyte:sqlite-spatial:0.2.0'
+    implementation 'de.topobyte:sqlite-spatial:0.3.0'
     implementation 'de.topobyte:geomath:0.1.0'
     implementation 'de.topobyte:melon-enums:0.0.1'
-    implementation 'de.topobyte:android-map-utils:0.2.0'
+    implementation 'de.topobyte:android-map-utils:0.3.0'
     implementation 'de.topobyte:android-intent-utils:0.1.0'
     implementation 'com.slimjars.trove4j:trove4j-int-int-hash-map:1.0.1'
     implementation project(':rotatelayout')
     implementation project(':loader-util')
     implementation project(':common-resources')
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'org.slf4j:slf4j-android:1.7.12'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'org.slf4j:slf4j-android:1.7.36'
     implementation 'pub.devrel:easypermissions:3.0.0'
     admobImplementation 'com.google.android.gms:play-services-ads:22.2.0'
 
-    testImplementation 'org.robolectric:robolectric:4.5.1'
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'de.topobyte:luqe-jdbc:0.2.1'
-    testImplementation 'org.slf4j:slf4j-api:1.7.12'
-    testImplementation 'org.xerial:sqlite-jdbc:3.8.9.1'
+    testImplementation 'org.robolectric:robolectric:4.8.2'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'de.topobyte:luqe-jdbc:0.4.0'
+    testImplementation 'org.slf4j:slf4j-api:1.7.36'
+    testImplementation 'org.xerial:sqlite-jdbc:3.42.0.0'
 }
