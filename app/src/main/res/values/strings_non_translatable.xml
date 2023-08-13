@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="copyright" translatable="false">© 2021 Sebastian Kürten</string>
+    <string name="copyright" translatable="false">© 2023 Sebastian Kürten</string>
     <string name="website" translatable="false">Website: www.topobyte.de</string>
     <string name="repo" translatable="false">GitHub: topobyte/stadtplan-app</string>
     <string name="gpl_3_0" translatable="false">GNU GPL 3.0</string>
