@@ -132,7 +132,7 @@ dependencies {
     implementation 'de.topobyte:sqlite-spatial:0.3.0'
     implementation 'de.topobyte:geomath:0.1.0'
     implementation 'de.topobyte:melon-enums:0.0.1'
-    implementation 'de.topobyte:android-map-utils:0.3.0'
+    implementation 'de.topobyte:android-map-utils:0.3.1'
     implementation 'de.topobyte:android-intent-utils:0.1.0'
     implementation 'com.slimjars.trove4j:trove4j-int-int-hash-map:1.0.1'
     implementation project(':rotatelayout')
