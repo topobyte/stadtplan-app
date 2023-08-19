@@ -17,6 +17,8 @@
 
 package de.topobyte.apps.viewer.activities;
 
+import static de.topobyte.android.common.resources.DonateDialog.donateDialog;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.util.Linkify;
@@ -32,7 +34,7 @@ import de.topobyte.android.intent.utils.IntentFactory;
 import de.topobyte.android.intent.utils.ThankOption;
 import de.topobyte.apps.maps.atestcity.BuildConfig;
 import de.topobyte.apps.maps.atestcity.R;
-import de.topobyte.apps.viewer.DonateDialog;
+import de.topobyte.android.common.resources.DonateDialog;
 import de.topobyte.apps.viewer.FeedbackUtil;
 
 public class AboutActivity extends PlainActivity
@@ -127,19 +129,23 @@ public class AboutActivity extends PlainActivity
     commonIcons.setRestaurant(buttonDonate10);
 
     buttonDonate1.setOnClickListener(view -> {
-      donateDialog(ThankOption.THANK_1);
+      DonateDialog dialog = donateDialog(ThankOption.THANK_1);
+      dialog.show(getSupportFragmentManager(), null);
     });
 
     buttonDonate2.setOnClickListener(view -> {
-      donateDialog(ThankOption.THANK_2);
+      DonateDialog dialog = donateDialog(ThankOption.THANK_2);
+      dialog.show(getSupportFragmentManager(), null);
     });
 
     buttonDonate5.setOnClickListener(view -> {
-      donateDialog(ThankOption.THANK_5);
+      DonateDialog dialog = donateDialog(ThankOption.THANK_5);
+      dialog.show(getSupportFragmentManager(), null);
     });
 
     buttonDonate10.setOnClickListener(view -> {
-      donateDialog(ThankOption.THANK_10);
+      DonateDialog dialog = donateDialog(ThankOption.THANK_10);
+      dialog.show(getSupportFragmentManager(), null);
     });
   }
 
@@ -160,15 +166,6 @@ public class AboutActivity extends PlainActivity
     {
       return link;
     }
-  }
-
-  private void donateDialog(ThankOption value)
-  {
-    DonateDialog dialog = new DonateDialog();
-    Bundle args = new Bundle();
-    args.putSerializable(DonateDialog.ARG_VALUE, value);
-    dialog.setArguments(args);
-    dialog.show(getSupportFragmentManager(), null);
   }
 
 }
