@@ -107,16 +107,12 @@ public class SearchActivity extends FullscreenAppCompatActivity
 
   private boolean handleMenuItemSelected(MenuItem item)
   {
-    switch (item.getItemId()) {
-
-      case android.R.id.home:
-      case R.id.menu_map:
-        finish();
-        return true;
-
-      default:
-        return false;
+    int itemId = item.getItemId();
+    if (itemId == android.R.id.home || itemId == R.id.menu_map) {
+      finish();
+      return true;
     }
+    return false;
   }
 
 }

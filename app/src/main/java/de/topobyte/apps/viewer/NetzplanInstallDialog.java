@@ -43,7 +43,7 @@ public class NetzplanInstallDialog extends DialogFragment
 
     LayoutInflater inflater = getActivity().getLayoutInflater();
 
-    builder.setTitle(R.string.cr_more_apps);
+    builder.setTitle(de.topobyte.android.common.resources.R.string.cr_more_apps);
     View view = inflater.inflate(R.layout.dialog_netzplan, null);
     builder.setView(view);
 

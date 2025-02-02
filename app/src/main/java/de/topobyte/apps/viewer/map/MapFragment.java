@@ -682,25 +682,21 @@ public class MapFragment extends Fragment implements RenderThemeListener, EasyPe
   @Override
   public boolean onOptionsItemSelected(MenuItem item)
   {
-    switch (item.getItemId()) {
-      case R.id.menu_search_remove:
-        hideResultPoint();
-        return true;
-
-      case R.id.menu_position:
-        return true;
-
-      case R.id.menu_position_my_location_enable:
-        enableShowMyLocation(true);
-        return true;
-
-      case R.id.menu_position_my_location_disable:
-        disableShowMyLocation(true);
-        return true;
-
-      case R.id.menu_position_last_known:
-        gotoLastKnownPosition();
-        return true;
+    int itemId = item.getItemId();
+    if (itemId == R.id.menu_search_remove) {
+      hideResultPoint();
+      return true;
+    } else if (itemId == R.id.menu_position) {
+      return true;
+    } else if (itemId == R.id.menu_position_my_location_enable) {
+      enableShowMyLocation(true);
+      return true;
+    } else if (itemId == R.id.menu_position_my_location_disable) {
+      disableShowMyLocation(true);
+      return true;
+    } else if (itemId == R.id.menu_position_last_known) {
+      gotoLastKnownPosition();
+      return true;
     }
 
     return super.onOptionsItemSelected(item);

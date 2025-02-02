@@ -360,19 +360,15 @@ public class SearchFragment extends BaseGeocodingFragment implements
       menu.show();
 
       menu.setOnMenuItemClickListener(item -> {
-        switch (item.getItemId()) {
-          case R.id.select_all:
-            pickAllCategories();
-            break;
-          case R.id.select_streets:
-            pickStreets();
-            break;
-          case R.id.select_food:
-            pickFood();
-            break;
-          case R.id.pick:
-            showCategoriesDialog();
-            break;
+        int itemId = item.getItemId();
+        if (itemId == R.id.select_all) {
+          pickAllCategories();
+        } else if (itemId == R.id.select_streets) {
+          pickStreets();
+        } else if (itemId == R.id.select_food) {
+          pickFood();
+        } else if (itemId == R.id.pick) {
+          showCategoriesDialog();
         }
         return false;
       });

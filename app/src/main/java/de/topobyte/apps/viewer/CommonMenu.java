@@ -59,58 +59,48 @@ public class CommonMenu
   public static boolean handleMenuItemSelected(FragmentActivity context, MenuItem item)
   {
     Intent intent;
-    switch (item.getItemId()) {
-
-      case R.id.menu_info_about:
-        context.startActivity(new Intent(context, AboutActivity.class));
-        return true;
-
-      case R.id.menu_info_privacy:
-        context.startActivity(new Intent(context, PrivacyActivity.class));
-        return true;
-
-      case R.id.menu_preferences:
-        context.startActivity(new Intent(context, SettingsActivity.class));
-        return true;
-
-      case R.id.menu_tips_and_tricks:
-        TipsAndTricks.showTipsAndTricks(context);
-        return true;
-
-      case R.id.menu_more_maps:
-        intent = new Intent(context, MoreAppsActivity.class);
-        context.startActivity(intent);
-        return true;
-
-      case R.id.menu_faq:
-        intent = AppMetaIntents.createFAQIntent(context);
-        context.startActivity(intent);
-        return true;
-
-      case R.id.menu_weather:
-        Locale locale = Locale.getDefault();
-        String lang = locale.getLanguage();
-        intent = TopobyteIntentFactory.createTopobyteWeatherIntent(
-            AppConstants.ISO3, AppConstants.CITY_NAME, lang, false);
-        context.startActivity(intent);
-        return true;
-
-      case R.id.menu_public_transport:
-        if (AppConstants.PACKAGE_NETZPLAN != null) {
-          if (PackageUtil.isPackageInstalled(context, AppConstants.PACKAGE_NETZPLAN)) {
-            intent = context.getPackageManager()
-                .getLaunchIntentForPackage(AppConstants.PACKAGE_NETZPLAN);
-            context.startActivity(intent);
-          } else {
-            NetzplanInstallDialog dialog = new NetzplanInstallDialog();
-            dialog.show(context.getSupportFragmentManager(), null);
-          }
+    int itemId = item.getItemId();
+    if (itemId == R.id.menu_info_about) {
+      context.startActivity(new Intent(context, AboutActivity.class));
+      return true;
+    } else if (itemId == R.id.menu_info_privacy) {
+      context.startActivity(new Intent(context, PrivacyActivity.class));
+      return true;
+    } else if (itemId == R.id.menu_preferences) {
+      context.startActivity(new Intent(context, SettingsActivity.class));
+      return true;
+    } else if (itemId == R.id.menu_tips_and_tricks) {
+      TipsAndTricks.showTipsAndTricks(context);
+      return true;
+    } else if (itemId == R.id.menu_more_maps) {
+      intent = new Intent(context, MoreAppsActivity.class);
+      context.startActivity(intent);
+      return true;
+    } else if (itemId == R.id.menu_faq) {
+      intent = AppMetaIntents.createFAQIntent(context);
+      context.startActivity(intent);
+      return true;
+    } else if (itemId == R.id.menu_weather) {
+      Locale locale = Locale.getDefault();
+      String lang = locale.getLanguage();
+      intent = TopobyteIntentFactory.createTopobyteWeatherIntent(
+          AppConstants.ISO3, AppConstants.CITY_NAME, lang, false);
+      context.startActivity(intent);
+      return true;
+    } else if (itemId == R.id.menu_public_transport) {
+      if (AppConstants.PACKAGE_NETZPLAN != null) {
+        if (PackageUtil.isPackageInstalled(context, AppConstants.PACKAGE_NETZPLAN)) {
+          intent = context.getPackageManager()
+              .getLaunchIntentForPackage(AppConstants.PACKAGE_NETZPLAN);
+          context.startActivity(intent);
+        } else {
+          NetzplanInstallDialog dialog = new NetzplanInstallDialog();
+          dialog.show(context.getSupportFragmentManager(), null);
         }
-        return true;
-
-      default:
-        return false;
+      }
+      return true;
     }
+    return false;
   }
 
 }

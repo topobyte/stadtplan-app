@@ -56,7 +56,7 @@ public class FeedbackUtil
   {
     Intent sharingIntent = new Intent(Intent.ACTION_SEND);
     sharingIntent.setType("text/plain");
-    String using = context.getString(R.string.share_using);
+    String using = context.getString(de.topobyte.android.common.resources.R.string.cr_share_using);
     String subject = context.getString(R.string.app_name);
 
     String packageName = context.getApplicationContext().getPackageName();

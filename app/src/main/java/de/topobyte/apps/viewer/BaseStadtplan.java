@@ -274,28 +274,22 @@ public class BaseStadtplan extends MapActivity implements OverlayListener,
 
   private boolean handleMenuItemSelected(MenuItem item)
   {
-    switch (item.getItemId()) {
-
-      case R.id.menu_search:
-        startSearch();
-        return true;
-
-      case R.id.menu_help_drawer:
-        HelpDrawerDialog helpDialog = new HelpDrawerDialog();
-        helpDialog.show(getSupportFragmentManager(), null);
-        return true;
-
-      case R.id.menu_select_all:
-        drawerList.selectAll();
-        return true;
-
-      case R.id.menu_select_none:
-        drawerList.selectNone();
-        return true;
-
-      default:
-        return false;
+    int itemId = item.getItemId();
+    if (itemId == R.id.menu_search) {
+      startSearch();
+      return true;
+    } else if (itemId == R.id.menu_help_drawer) {
+      HelpDrawerDialog helpDialog = new HelpDrawerDialog();
+      helpDialog.show(getSupportFragmentManager(), null);
+      return true;
+    } else if (itemId == R.id.menu_select_all) {
+      drawerList.selectAll();
+      return true;
+    } else if (itemId == R.id.menu_select_none) {
+      drawerList.selectNone();
+      return true;
     }
+    return false;
   }
 
   @Override

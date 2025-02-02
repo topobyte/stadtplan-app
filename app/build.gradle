@@ -11,12 +11,16 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 34
+    buildToolsVersion '35.0.0'
+    buildFeatures {
+        buildConfig = true
+    }
+    namespace = 'de.topobyte.apps.maps.atestcity'
     defaultConfig {
         applicationId 'de.topobyte.apps.maps.atestcity'
         minSdkVersion 19
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode 161
         versionName "10.0.1"
         buildConfigField "int", "MAP_FILE_SIZE", "" +
@@ -42,7 +46,7 @@ android {
     }
     lintOptions {
         disable 'MissingTranslation'
-        checkReleaseBuilds false
+        checkReleaseBuilds = false
     }
     testOptions {
         unitTests.returnDefaultValues = true
@@ -52,7 +56,7 @@ android {
             release {
                 minifyEnabled true
                 proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-                signingConfig signingConfigs.release
+                signingConfig = signingConfigs.release
             }
         }
     }
