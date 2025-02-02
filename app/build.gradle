@@ -20,8 +20,8 @@ android {
         compileSdk 35
         minSdkVersion 19
         targetSdkVersion 35
-        versionCode 161
-        versionName "10.0.1"
+        versionCode 170
+        versionName "11.0.0"
         buildConfigField "int", "MAP_FILE_SIZE", "" +
                 new File("app/src/main/assets/map.xmap.jet").size()
         buildConfigField "int", "DATABASE_FILE_SIZE", "" +
