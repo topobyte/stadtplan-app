@@ -17,9 +17,9 @@ android {
     namespace = 'de.topobyte.apps.maps.atestcity'
     defaultConfig {
         applicationId 'de.topobyte.apps.maps.atestcity'
-        compileSdk 34
+        compileSdk 35
         minSdkVersion 19
-        targetSdkVersion 34
+        targetSdkVersion 35
         versionCode 161
         versionName "10.0.1"
         buildConfigField "int", "MAP_FILE_SIZE", "" +
