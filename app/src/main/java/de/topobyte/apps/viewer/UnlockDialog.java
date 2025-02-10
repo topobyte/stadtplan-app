@@ -29,7 +29,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.freemium.FreemiumUtil;
 import de.topobyte.apps.viewer.search.HelpSearchDialog;
 

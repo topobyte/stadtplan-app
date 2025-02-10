@@ -23,7 +23,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import de.topobyte.android.common.resources.hasviews.HasViews;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.freemium.FreemiumUtil;
 
 public class Privacy

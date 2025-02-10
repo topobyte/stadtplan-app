@@ -20,7 +20,7 @@ package de.topobyte.apps.viewer.activities;
 import android.os.Bundle;
 
 import de.topobyte.android.common.resources.hasviews.ActivityHasViews;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.Privacy;
 
 public class PrivacyActivity extends PlainActivity

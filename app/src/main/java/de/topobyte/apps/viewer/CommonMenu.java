@@ -28,7 +28,7 @@ import java.util.Locale;
 import de.topobyte.android.intent.utils.AppMetaIntents;
 import de.topobyte.android.intent.utils.TopobyteIntentFactory;
 import de.topobyte.android.misc.utils.PackageUtil;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.activities.AboutActivity;
 import de.topobyte.apps.viewer.activities.MoreAppsActivity;
 import de.topobyte.apps.viewer.activities.PrivacyActivity;

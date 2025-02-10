@@ -22,7 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 
 public class FeedbackUtil
 {

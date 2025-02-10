@@ -30,7 +30,7 @@ import org.locationtech.jts.geom.Point;
 import java.io.IOException;
 
 import de.topobyte.android.fullscreen.FullscreenUtil;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.AppConstants;
 import de.topobyte.apps.viewer.Constants;
 import de.topobyte.apps.viewer.LoaderActivity;

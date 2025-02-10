@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.freemium.FreemiumUtil;
 
 public class NoResultsFragment extends Fragment

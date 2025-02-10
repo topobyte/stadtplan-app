@@ -30,11 +30,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import de.topobyte.android.common.resources.CommonIcons;
+import de.topobyte.android.common.resources.DonateDialog;
 import de.topobyte.android.intent.utils.IntentFactory;
 import de.topobyte.android.intent.utils.ThankOption;
-import de.topobyte.apps.maps.atestcity.BuildConfig;
-import de.topobyte.apps.maps.atestcity.R;
-import de.topobyte.android.common.resources.DonateDialog;
+import de.topobyte.apps.maps.stadtplan.BuildConfig;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.FeedbackUtil;
 
 public class AboutActivity extends PlainActivity

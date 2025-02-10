@@ -29,7 +29,7 @@ import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 
 public class OverlayGroup extends RelativeLayout
 {

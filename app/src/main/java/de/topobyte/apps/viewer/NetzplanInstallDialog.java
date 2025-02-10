@@ -30,7 +30,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
 import de.topobyte.android.intent.utils.IntentFactory;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 
 public class NetzplanInstallDialog extends DialogFragment
 {

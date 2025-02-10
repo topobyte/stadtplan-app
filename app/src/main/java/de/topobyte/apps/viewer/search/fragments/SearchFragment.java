@@ -24,9 +24,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -34,7 +32,6 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import androidx.appcompat.widget.PopupMenu;
-import androidx.appcompat.widget.PopupMenu.OnMenuItemClickListener;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -43,7 +40,7 @@ import com.slimjars.dist.gnu.trove.set.hash.TIntHashSet;
 
 import java.util.List;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.UnlockDialog;
 import de.topobyte.apps.viewer.freemium.FreemiumUtil;
 import de.topobyte.apps.viewer.poi.Categories;

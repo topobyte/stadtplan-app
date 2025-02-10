@@ -19,7 +19,7 @@ package de.topobyte.apps.viewer.preferences;
 
 import android.os.Bundle;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.activities.PlainActivity;
 
 public class SettingsActivity extends PlainActivity

@@ -19,12 +19,11 @@ package de.topobyte.apps.viewer.search.categories;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.ExpandableListView;
 
 import com.slimjars.dist.gnu.trove.set.TIntSet;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.poi.Categories;
 import de.topobyte.apps.viewer.widget.NormalCheckBox;
 

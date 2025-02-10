@@ -14,7 +14,7 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    namespace = 'de.topobyte.apps.maps.atestcity'
+    namespace = 'de.topobyte.apps.maps.stadtplan'
     defaultConfig {
         applicationId 'de.topobyte.apps.maps.atestcity'
         compileSdk 35

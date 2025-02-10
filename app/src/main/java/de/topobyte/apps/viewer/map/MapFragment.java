@@ -30,7 +30,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ZoomControls;
 
@@ -44,7 +43,7 @@ import de.topobyte.android.maps.utils.MagnificationConfig;
 import de.topobyte.android.maps.utils.MapZoomControls;
 import de.topobyte.android.maps.utils.view.MapPosition;
 import de.topobyte.android.misc.utils.Toaster;
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.AppConstants;
 import de.topobyte.apps.viewer.Constants;
 import de.topobyte.apps.viewer.NoLocationSourceDialog;
@@ -58,7 +57,8 @@ import de.topobyte.mapocado.android.style.MapRenderConfig;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
 
-public class MapFragment extends Fragment implements RenderThemeListener, EasyPermissions.PermissionCallbacks
+public class MapFragment extends Fragment
+    implements RenderThemeListener, EasyPermissions.PermissionCallbacks
 {
 
   public final static String ARG_USE_INTENT = "use-intent";

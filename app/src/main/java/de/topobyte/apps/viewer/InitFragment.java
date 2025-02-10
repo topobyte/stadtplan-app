@@ -27,7 +27,7 @@ import java.io.IOException;
 import de.topobyte.android.appversions.VersionUpdateChecker;
 import de.topobyte.android.loader3.TaskFragment;
 import de.topobyte.android.maps.utils.MagnificationConfig;
-import de.topobyte.apps.maps.atestcity.BuildConfig;
+import de.topobyte.apps.maps.stadtplan.BuildConfig;
 import de.topobyte.apps.viewer.map.MapPreferenceAbstraction;
 import de.topobyte.apps.viewer.theme.ThemeConfig;
 

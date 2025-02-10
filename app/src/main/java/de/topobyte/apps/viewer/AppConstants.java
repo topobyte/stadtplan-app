@@ -21,25 +21,23 @@ import org.locationtech.jts.geom.Envelope;
 
 public class AppConstants
 {
+  public static final boolean HAS_POSITION = true;
+  public static final boolean HAS_ZOOM = true;
 
-  public static final boolean HAS_POSITION = false;
-  public static final boolean HAS_ZOOM = false;
-
-  public static final boolean USE_MAPFILE_POSITION = true;
-  public static final double STARTUP_LON = 0.0;
-  public static final double STARTUP_LAT = 0.0;
-  public static final int STARTUP_ZOOM = 12;
+  public static final boolean USE_MAPFILE_POSITION = false;
+  public static final double STARTUP_LON = 13.387012;
+  public static final double STARTUP_LAT = 52.520138;
+  public static final int STARTUP_ZOOM = 14;
 
   public static final boolean HAS_MIN_ZOOM = true;
   public static final boolean HAS_MAX_ZOOM = true;
 
   public static final int MIN_ZOOM = 10;
-  public static final int MAX_ZOOM = 21;
+  public static final int MAX_ZOOM = 22;
 
-  public static final Envelope BBOX = new Envelope(13.088315, 13.760908,
-      52.675476, 52.338076);
+  public static final Envelope BBOX = new Envelope(13.068373, 13.780818, 52.318095, 52.695454);
 
-  public static final String CITY_NAME = "ATestCity";
+  public static final String CITY_NAME = "Berlin";
   public static final String ISO3 = "DEU";
 
   public static final String PACKAGE_NETZPLAN = "de.topobyte.transportation.plan.deu.berlin";

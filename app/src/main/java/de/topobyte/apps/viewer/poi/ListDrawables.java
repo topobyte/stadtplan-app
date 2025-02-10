@@ -24,7 +24,7 @@ import com.slimjars.dist.gnu.trove.map.hash.TObjectIntHashMap;
 
 import java.util.List;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.luqe.iface.IConnection;
 import de.topobyte.luqe.iface.QueryException;
 import de.topobyte.nomioc.luqe.dao.Dao;

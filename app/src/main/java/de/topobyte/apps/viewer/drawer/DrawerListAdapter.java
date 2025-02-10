@@ -22,12 +22,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import java.util.Locale;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.BaseStadtplan;
 import de.topobyte.apps.viewer.label.LabelDrawerPreferenceAbstraction;
 import de.topobyte.apps.viewer.label.LabelMode;

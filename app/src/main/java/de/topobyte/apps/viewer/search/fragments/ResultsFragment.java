@@ -25,15 +25,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import androidx.fragment.app.Fragment;
 
 import java.util.List;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.poi.PoiTypeInfo;
 import de.topobyte.apps.viewer.search.DatabaseAccess;
 import de.topobyte.apps.viewer.search.ResultOrder;

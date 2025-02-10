@@ -30,7 +30,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import java.util.Timer;
 import java.util.TimerTask;
 
-import de.topobyte.apps.maps.atestcity.R;
+import de.topobyte.apps.maps.stadtplan.R;
 import de.topobyte.apps.viewer.ads.AdSetup;
 import de.topobyte.apps.viewer.freemium.FreemiumInfo;
 import de.topobyte.apps.viewer.freemium.FreemiumUtil;
